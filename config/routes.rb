@@ -7,4 +7,11 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  # verb "path", to: "controllername#action" 
+  # root to: defines the main home page
+  
+  root to: "pages#home"
+  get "/about", to: "pages#about"
+  get "/contact", to: "pages#contact"
 end
